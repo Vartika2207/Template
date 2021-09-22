@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Digital Dude Tech</title>
+    <style>
+        html {
+        overflow-x: hidden;
+        scroll-behavior: smooth;
+        scroll-padding-top: 6rem;
+        font-size: 62.5%;
+        }
+
+        /******Header******/
+        .header{
+            background-color: #F8B195;
+            width: 100%;
+            top: 0; right: 0; left: 0;
+            /* display: flex;
+            flex-wrap: nowrap; */
+
+        }
+        .header .header-left-text{
+            text-align: left;
+            position: absolute;
+            margin: auto 0;
+            padding: 1.2rem;
+            color: #fff;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            font-size: 1.77rem;
+
+        }
+
+        .header .logo{
+            height: 8rem;
+            width: 8rem;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+
+        /*home*/
+        .home {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: column;
+        position: relative;
+        top: -8rem;
+        height: 12rem;
+        }
+        .content{
+            text-align: center;
+        }
+        .content h3{
+            font-size: 50px; 
+            color: #fff; 
+            text-transform: uppercase;
+            text-shadow: 3 .3rem .5rem rgba(0,0,0,.1);
+        }
+        .content p{
+            font-size: 43px; 
+            color: #fff; 
+            text-transform: uppercase;
+            text-shadow: 3 .3rem .5rem rgba(0,0,0,.1);
+        }
+        .home .image-container img {
+        position: absolute;
+        top: .1%;
+        left: 0;
+        z-index: -1;
+        height: 80%;
+        width: 100%;
+        object-fit: cover;
+        }
+        .home .button-get-started{
+            background-color: #F67280;
+            width: 12rem;
+            height: 5rem;
+            cursor: pointer;
+            border-radius: .9rem;
+        }
+        .home .button-get-started p{
+            color: #ffff;
+            text-align: center;
+            font-size: 1.7rem;
+            /* line-height: 120%; */
+            /* margin: auto; */
+            /* display: flex; */
+            padding: 0 2rem ;
+        }
+        .service-container .box-container{
+            display: flex;
+            flex-direction: row;
+
+        }
+        /* service-container */
+        .container{
+            margin-top: auto;
+            background: #F67280;
+            width: 100%;
+            /* margin: 5rem auto 0; */
+            display: table;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            box-sizing: border-box;
+        }
+        .container .row{
+            margin: 3rem 0;
+            align-items: center;
+            /* margin-left: 28rem; */
+            /* margin: auto 0; */
+            justify-content: space-around;
+        }
+        .container .row .column{
+            background: #F67280;
+            display: table-cell;
+            color: #ffff;
+            width: 33.33%;
+            margin: 5rem 0;
+            /* justify-content: space-around; */
+            padding: 1rem;
+        }
+        .container .row .column .button{
+            background: #ffff;
+            width: 8rem;
+            height: 3rem;
+            border-radius: .5rem;
+            font-size: 1.4rem;
+            /* padding: .3rem; */
+            text-align: center;
+            background-color: #F67280;
+            border: .2rem solid #ffff;
+        }
+        .container .row .column .button p{
+            margin: auto .6rem;
+            line-height: 2.6rem;
+            /* vertical-align: middle; */
+            color: #ffff;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        @media (max-width: 900px){
+            .container{
+                margin: 0;
+                padding: 1rem;
+                width: 100%;
+            }
+            .container .column{
+                width: 100%;
+                display: block;
+                margin: 1rem 0;
+                border: none;
+                box-sizing: border-box;
+            }
+            .container .column .row{
+                margin: 0;
+            }
+
+        }
+
+        /* line */
+        .line{
+            width: 100%;
+            height: .2rem;
+            background: #fff;
+        }
+        /* team */
+        .container .text{
+            color: #fff;
+            text-align: center;
+            font-size: 3rem;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .container .about{
+            color: #fff;
+            font-size: 1.5rem;
+            text-align: center;
+        }
+        .container .line{
+            width: 90%;
+            height: .1rem;
+            margin: auto;
+        }
+
+        /* members */
+        .team img{
+            border-radius: 50%;
+            
+        }
+    </style>
+</head>
+<body>
+
+    <section class="header">
+        <div class = "header-left-text">
+            <h4>Servie Details</h4>
+        </div>
+        <div>
+            <a href="https://digitalhain.com/" target="_blank"><img class="logo" src="https://mydigitaldudes.in/wp-content/uploads/2021/03/cropped-WhatsApp_Image_2021-03-21_at_6.26.27_PM-removebg-preview.png" alt=""></a>
+        </div>
+    </section>
+
+    <section class="home" >
+        <div class="content" >
+            <h3>Services</h3>
+            <p>Place which you can trust</p>
+
+        </div>
+        <div class="image-container">
+          <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c2VydmljZXN8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" style="width: 100%;">
+
+        </div>
+        <div class="button-get-started">
+            <p>Get Started</p>
+        </div>
+   </section>
+
+   <!-- <section class="services-container">
+        <div class="box-container">
+            <div class="box">
+                <img src="https://images.unsplash.com/39/lIZrwvbeRuuzqOoWJUEn_Photoaday_CSD%20(1%20of%201)-5.jpg?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YnVzaW5lc3N8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" style="width: 100%;">
+                <div class="content">
+                    <p>Build Business</p>
+                    <ul style="list-style-type: none;">
+                        <li>
+                            <a href="#">Business Development</a>
+                            <a href="#">Business Analysis</a>
+                            <a href="#">Business Consult</a>
+                
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="box">
+                <img src="https://images.unsplash.com/39/lIZrwvbeRuuzqOoWJUEn_Photoaday_CSD%20(1%20of%201)-5.jpg?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YnVzaW5lc3N8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" style="width: 100%;">
+                <div class="content">
+                    <p>Build Business</p>
+                    <ul style="list-style-type: none;">
+                        <li>
+                            <a href="#">Business Development</a>
+                            <a href="#">Business Analysis</a>
+                            <a href="#">Business Consult</a>
+                
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="box">
+                <img src="https://images.unsplash.com/39/lIZrwvbeRuuzqOoWJUEn_Photoaday_CSD%20(1%20of%201)-5.jpg?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YnVzaW5lc3N8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" style="width: 100%;">
+                <div class="content">
+                    <p>Build Business</p>
+                    <ul style="list-style-type: none;">
+                        <li>
+                            <a href="#">Business Development</a>
+                            <a href="#">Business Analysis</a>
+                            <a href="#">Business Consult</a>
+                
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+   </section> -->
+
+   
+    <div class="container">
+        <h1 class="text">Our Services</h1>
+        <p class="about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, magni!</p>
+        <div class="line"></div>
+        <div class="row">
+            <div class="column">
+                <img src="https://images.unsplash.com/photo-1519222970733-f546218fa6d7?ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8d2Vic2l0ZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" class="image" style="width: 100%; height: 10rem;">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                 <div class="button"><p>Get Started</p></div>
+            </div>
+            <div class="column">
+                <img src="https://images.unsplash.com/photo-1519222970733-f546218fa6d7?ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8d2Vic2l0ZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" class="image" style="width: 100%; height: 10rem;">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            <div class="button"><p>Get Started</p></div>
+        </div>
+        <div class="column">
+            <img src="https://images.unsplash.com/photo-1519222970733-f546218fa6d7?ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8d2Vic2l0ZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" class="image" style="width: 100%; height: 10rem;">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            <div class="button"><p>Get Started</p></div>
+        </div>          
+        </div>
+        <div class="row">
+        <div class="column">
+            <img src="https://images.unsplash.com/photo-1519222970733-f546218fa6d7?ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8d2Vic2l0ZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" class="image" style="width: 100%; height: 10rem;">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <div class="button"><p>Get Started</p></div>
+        </div>
+        <div class="column">
+            <img src="https://images.unsplash.com/photo-1519222970733-f546218fa6d7?ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8d2Vic2l0ZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" class="image" style="width: 100%; height: 10rem;">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            <div class="button"><p>Get Started</p></div>
+        </div>
+        <div class="column">
+            <img src="https://images.unsplash.com/photo-1519222970733-f546218fa6d7?ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8d2Vic2l0ZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" class="image" style="width: 100%; height: 10rem;">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            <div class="button"><p>Get Started</p></div>
+        </div>          
+    </div>
+    </div>
+   
+    <div class="line">
+    </div>
+
+
+    <div class="container team">
+        <h1 class="text">Our Awesome Team</h1>
+        <p class="about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit dicta, at ad incidunt asperiores fuga nihil error. Earum, iste at.</p>
+        <div class="line"></div>
+        <div class="row">
+            <div class="column">
+                <img src="https://images.unsplash.com/photo-1519222970733-f546218fa6d7?ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8d2Vic2l0ZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" class="image" style="width: 100%; height: 10rem;">
+                <p class="about">Dilip Thakur</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <!-- <div class="button"><p>Get Started</p></div> -->
+            </div>
+            <div class="column">
+                <img src="https://images.unsplash.com/photo-1519222970733-f546218fa6d7?ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8d2Vic2l0ZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" class="image" style="width: 100%; height: 10rem;">
+                <p class="about">Mohd Moin</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            <!-- <div class="button"><p>Get Started</p></div> -->
+        </div>
+        <div class="column">
+            <img src="https://images.unsplash.com/photo-1519222970733-f546218fa6d7?ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8d2Vic2l0ZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" class="image" style="width: 100%; height: 10rem;">
+            <p class="about">Mohd Aadil</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            <!-- <div class="button"><p>Get Started</p></div> -->
+        </div>          
+        </div>
+        <div class="row">
+        <div class="column">
+            <img src="https://images.unsplash.com/photo-1519222970733-f546218fa6d7?ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8d2Vic2l0ZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" class="image" style="width: 100%; height: 10rem;">
+            <p class="about">Amit Kashyap</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <!-- <div class="button"><p>Get Started</p></div> -->
+        </div>
+        <div class="column">
+            <img src="https://images.unsplash.com/photo-1519222970733-f546218fa6d7?ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8d2Vic2l0ZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" class="image" style="width: 100%; height: 10rem;">
+            <p class="about">Mansi Prajapati</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            <!-- <div class="button"><p>Get Started</p></div> -->
+        </div>
+        <div class="column">
+            <img src="https://images.unsplash.com/photo-1519222970733-f546218fa6d7?ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8d2Vic2l0ZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" class="image" style="width: 100%; height: 10rem;">
+            <p class="about">Ravina Gupta</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            
+            <!-- <div class="button"><p>Get Started</p></div> -->
+        </div>          
+    </div>
+    </div>
+
+    <div class="line"></div>
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>

@@ -1,0 +1,2 @@
+# Template
+Single Page template
